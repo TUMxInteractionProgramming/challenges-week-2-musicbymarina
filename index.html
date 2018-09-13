@@ -51,6 +51,7 @@
         /*styles for channel area*/
         ol {
             /* #2 #colorful #channelandchat */
+            /*The channel list has a white background and no bullet points */
             background-color: white;
             list-style-type: none;
         }
@@ -78,14 +79,17 @@
         }
 
         .tab-bar {
+            /*Background color of container element is white*/
             background-color: white;
         }
 
         .chat-view {
+            /*Make these containers use 80% of the browser’s width.*/
             width: 80%;
         }
 
         a {
+            /*w3w locations have primary text color*/
             color: #3F51B5;
         }
 
@@ -97,9 +101,11 @@
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
+<!-- Insert Moocus (moocus.png) into the app bar above the channel area. Do not forget to set a fallback text, if the image cannot be displayed. Resize the image to a height of 56px using inline CSS -->
 <h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus logo" style="height:"56px"">chatter|app</h1>
 
 <!-- #1 #channels #topics -->
+<!-- Each channel has a ‘star’ or a ‘star-o’ -->
 <ol>
 <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="my favorite"></li>
 <li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="my favorite"></li>
@@ -109,7 +115,9 @@
 </ol>
 
 <!-- #1 #channels #buttons -->
+<!-- Tab bar buttons are wrapped in one container element -->
 <div class="tab-bar">
+    <!-- An image for the tab button is referenced in the HMTL code prior to the corresponding button text -->
 <button> <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="new">new</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="trending">trending</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites">favorites</button>
@@ -127,9 +135,12 @@
     </small>
 </h1>
 
+<!--Group each chat message in a container.-->
+<div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+    <!-- All locations link to w3w website. The map with the corresponding location should be opened in a new tab. -->
     <strong><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank">cheeses.yard.applies</a></strong>
     Wed, June 20th, 13:37
     <!-- #1 #chat #ttl lives inside the metadata -->
@@ -139,7 +150,10 @@
 <p>What's the place you folks call home?</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!--Group each chat message in a container.-->
+<div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -152,7 +166,10 @@
 <p>BRISBANE! Hang loose!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!--Group each chat message in a container.-->
+<div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -165,7 +182,10 @@
 <p>The big apple.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!--Group each chat message in a container.-->
+<div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -178,7 +198,10 @@
 <p>Eu sou um Carocas.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!--Group each chat message in a container.-->
+<div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -191,7 +214,10 @@
 <p>Greetings from the western cape!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
+<!--Group each chat message in a container.-->
+<div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -204,6 +230,8 @@
 <p>北京</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
+
 </div>
 </body>
 </html>
