@@ -10,90 +10,7 @@
     <meta charset="UTF-8">
 
     <!-- #2 #css #elements -->
-    <style>
-
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-
-
-        /*styles for channel area*/
-        ol {
-            /* #2 #colorful #channelandchat */
-            /*The channel list has a white background and no bullet points */
-            background-color: white;
-            list-style-type: none;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-
-        .tab-bar {
-            /*Background color of container element is white*/
-            background-color: white;
-        }
-
-        .chat-view {
-            /*Make these containers use 80% of the browser’s width.*/
-            width: 80%;
-        }
-
-        a {
-            /*w3w locations have primary text color*/
-            color: #3F51B5;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
@@ -102,6 +19,7 @@
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
 <!-- Insert Moocus (moocus.png) into the app bar above the channel area. Do not forget to set a fallback text, if the image cannot be displayed. Resize the image to a height of 56px using inline CSS -->
+<header>
 <h1>
     <img 
     src="https://ip.lfe.mw.tum.de/sections/moocus.png" 
@@ -116,19 +34,20 @@
 <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="my favorite"></li>
 <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="my favorite"></li>
 </ol>
+</header>
 
 <!-- #1 #channels #buttons -->
 <!-- Tab bar buttons are wrapped in one container element -->
-<div class="tab-bar">
+<div id="tab-bar">
     <!-- An image for the tab button is referenced in the HMTL code prior to the corresponding button text -->
-<button> <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="new">new</button>
+<button class="selected"> <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="new">new</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="trending">trending</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites">favorites</button>
 </div>
 
 
 <!-- chat area -->
-<div class="chat-view">
+<div id="chat-view">
 <!-- #1 #chat #name -->
 <h1>#SevenContinents
     <!-- #1 #chat #location is wrapped in small tag-->
@@ -139,7 +58,7 @@
 </h1>
 
 <!--Group each chat message in a container.-->
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -156,7 +75,7 @@
 </div>
 
 <!--Group each chat message in a container.-->
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -172,7 +91,7 @@
 </div>
 
 <!--Group each chat message in a container.-->
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -188,7 +107,7 @@
 </div>
 
 <!--Group each chat message in a container.-->
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -204,7 +123,7 @@
 </div>
 
 <!--Group each chat message in a container.-->
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -220,7 +139,7 @@
 </div>
 
 <!--Group each chat message in a container.-->
-<div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
